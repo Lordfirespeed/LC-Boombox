@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BepInEx;
 using BepInEx.Logging;
 using CustomBoomboxTracks.Managers;
@@ -7,6 +7,7 @@ using HarmonyLib;
 namespace CustomBoomboxTracks
 {
     [BepInPlugin(GUID, NAME, VERSION)]
+    [BepInDependency("com.github.lordfirespeed.configurable_youtube_boombox", DependencyFlags.SoftDependency)]
     public class BoomboxPlugin : BaseUnityPlugin
     {
         private const string GUID = "com.steven.lethalcompany.boomboxmusic";
